@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="shinhan.ac.kr.minifarm_android">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/minimini"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".A_Loading.StartActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".B_Login.LoginActivity" />
+        <activity android:name=".C_Main.MainActivity" />
+        <activity android:name=".B_Login.RegisterActivity" />
+        <activity android:name=".B_Login.ForgotActivity" />
+        <activity android:name=".C_Main.CheckmyqActivity" />
+        <activity android:name=".C_Main.SecessionActivity" />
+        <activity android:name=".C_Main.SecessionCheckActivity" />
+        <activity android:name=".C_Main.QuestionActivity" />
+        <activity android:name=".Z_Data.Register_ID_Check" />
+        <activity android:name=".Z_Data.Register_Result" />
+        <activity android:name=".Z_Data.Forgot_ID_check" />
+        <activity android:name=".Z_Data.Forgot_PW_check" />
+        <activity android:name=".Z_Data.Result_Login" />
+        <activity android:name=".Z_Data.Userinfo_update" />
+        <activity android:name=".Z_Data.Userinfo_delete" />
+        <activity android:name=".Z_Adapter.Listview_item" />
+        <activity android:name=".Z_Data.Crops_delete" />
+        <activity android:name=".C_Main.UserInfo_edit" />
+        <activity android:name=".Z_Dialog.Dialog_logout" />
+        <activity android:name=".C_Main.SearchActivity" />
+        <activity android:name=".Z_Adapter.Listview_qna" />
+        <activity android:name=".Z_Data.Question_create" />
+        <activity android:name=".Z_Data.Question_delete" />
+        <activity android:name=".Z_Dialog.Dialog_Qdelete" />
+        <activity android:name=".Z_Data.WebSearch" />
+        <activity android:name=".Z_Dialog.Dialog_crops" />
+        <activity android:name=".Z_Data.Crops_create" />
+        <activity android:name=".Z_Dialog.Dialog_fan" />
+        <activity android:name=".Z_Dialog.Dialog_curtain" />
+        <activity android:name=".Z_Dialog.Dialog_sprinkler"></activity>
+    </application>
+
+</manifest>
