@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_main1"
+        android:icon="@drawable/home"
+        android:title="홈" />
+
+    <item
+        android:id="@+id/navigation_main2"
+        android:icon="@drawable/list2"
+        android:title="작물관리" />
+
+    <item
+        android:id="@+id/navigation_main3"
+        android:icon="@drawable/question"
+        android:title="문의하기" />
+
+    <item
+        android:id="@+id/navigation_main4"
+        android:icon="@drawable/user"
+        android:title="마이페이지" />
+</menu>
