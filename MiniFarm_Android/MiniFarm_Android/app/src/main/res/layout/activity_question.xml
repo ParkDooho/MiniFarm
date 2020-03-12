@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".C_Main.QuestionActivity">
+    <RelativeLayout
+        android:id="@+id/my_page_frag_top_bar"
+        android:layout_width="match_parent"
+        android:background="#A1CDE1"
+        android:layout_height="48dp">
+
+
+        <!--탑 바 마이페이지-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="문의사항"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:orientation="vertical"
+        >
+
+    <EditText
+        android:id="@+id/edit_qname"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:gravity="center_vertical"
+        android:hint="제목을 입력해주세요."
+        android:padding="15dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="13dp"
+        android:background="@drawable/text_border"
+        />
+
+        <EditText
+            android:id="@+id/edit_qcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:maxLength="100"
+            android:layout_weight="3"
+            android:textSize="14dp"
+            android:padding="15dp"
+            android:hint="내용을 입력하세요(100자 이내)"
+            android:background="@drawable/text_border"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/btn_qback"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:text="취소"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/text_border"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/btn_question"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:text="등록"
+                android:textColor="@color/white"
+                android:background="@drawable/text_border3"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
