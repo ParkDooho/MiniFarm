@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Z_Fragment.menu1Fragment">
+
+    <RelativeLayout
+        android:id="@+id/my_page_frag_top_bar"
+        android:layout_width="match_parent"
+        android:background="#A1CDE1"
+        android:layout_height="48dp">
+
+
+        <!--탑 바 마이페이지-->
+        <TextView
+            android:id="@+id/tv_my_page_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MiniFarm"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:layout_centerInParent="true"/>
+
+        <!--
+        <ImageView
+            android:id="@+id/Image_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="?android:selectableItemBackground"
+            android:padding="8dp"
+            android:paddingLeft="4dp"
+            android:paddingVertical="6dp"
+            android:src="@drawable/ic_search_whilte_24dp"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+            -->
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:id="@+id/linear_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+
+            android:layout_width="340dp"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <LinearLayout
+                android:id="@+id/my_sensor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/sensor"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="나의 센서 정보 확인"
+                    android:textColor="@color/white" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"></View>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="160dp"
+        android:id="@+id/linear_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <LinearLayout
+                  android:id="@+id/tem_sensor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="55dp"
+                    android:background="@drawable/tem"
+                    android:padding="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/colorLightGray"></View>
+
+                <TextView
+                    android:id="@+id/sensorTem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="온도"
+                    android:textColor="@android:color/darker_gray" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <LinearLayout
+                android:id="@+id/hum_sensor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/hum2"
+                    android:padding="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/colorLightGray"></View>
+
+                <TextView
+                    android:id="@+id/sensorHum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="습도"
+                    android:textColor="@android:color/darker_gray" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_2"
+        android:layout_below="@id/linear_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/place_section"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <LinearLayout
+                android:id="@+id/ill_sensor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/ill"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"/>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/colorLightGray"></View>
+
+                <TextView
+                    android:id="@+id/sensorIllu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="조도"
+                    android:textColor="@android:color/darker_gray" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/culture_section"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <LinearLayout
+                android:id="@+id/ph_sensor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+
+                    android:layout_width="70dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/ph3"
+                    android:padding="10dp"/>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/colorLightGray"></View>
+
+                <TextView
+                    android:id="@+id/sensorPH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="토양습도"
+                    android:textColor="@android:color/darker_gray" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
