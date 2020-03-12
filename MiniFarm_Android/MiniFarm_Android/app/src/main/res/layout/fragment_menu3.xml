@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Z_Fragment.menu3Fragment">
+    <!--탑바-->
+    <RelativeLayout
+        android:id="@+id/my_page_frag_top_bar"
+        android:layout_width="match_parent"
+        android:background="#A1CDE1"
+        android:layout_height="48dp">
+
+
+        <!--탑 바 마이페이지-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="문의사항"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:id="@+id/btnAddQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="?android:selectableItemBackground"
+            android:padding="8dp"
+            android:paddingLeft="4dp"
+            android:paddingVertical="6dp"
+            android:src="@drawable/ic_add_pencil_24dp"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <!-- 환결설정 탭 끝 (weight 260 사용, 2300 남음) -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:elevation="1dp">
+
+        <RelativeLayout
+            android:id="@+id/re_faq"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textFaq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="FAQ"
+                android:textColor="#414141"
+                android:textSize="16dp" />
+
+            <View
+                android:visibility="invisible"
+                android:id="@+id/faq_underbar_line"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="#A1CDE1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_myq"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textmyq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="나의 질문"
+                android:textColor="#414141"
+                android:textSize="16dp" />
+
+            <View
+                android:id="@+id/q_underbar_line"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="#A1CDE1"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/child_fragment"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </LinearLayout>
+
+
+
+</LinearLayout>
