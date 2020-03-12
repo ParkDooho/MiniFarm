@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MiniFarm</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="crops_info">생육온도 : 발아적온 25~30°C\n육모적온 20~25°C\n개화적온 20~25°C\n생육적온 17~27°C \n과비대적온 25~30°C\n저장적온 4°C\n\n재배적지 : 토양사노 pH 6.5~7.0\n범위에서 생육양호</string>
+</resources>
