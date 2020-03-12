@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Z_Fragment.menu2Fragment">
+
+    <RelativeLayout
+        android:id="@+id/my_page_frag_top_bar"
+        android:layout_width="match_parent"
+        android:background="#A1CDE1"
+        android:layout_height="48dp">
+
+
+        <!--탑 바 마이페이지-->
+        <TextView
+            android:id="@+id/tv_my_page_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="작물관리"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:layout_centerInParent="true"/>
+
+
+        <ImageView
+            android:id="@+id/btnsearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="?android:selectableItemBackground"
+            android:padding="8dp"
+            android:paddingLeft="4dp"
+            android:paddingVertical="6dp"
+            android:src="@drawable/ic_search_whilte_24dp"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@id/toolbar"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:padding="15dp"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:text="MY."
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30dp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLightGray"
+                />
+            <LinearLayout
+                android:id="@+id/header"
+                android:layout_below="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4.5"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#7a7a7a"
+                    android:text="작물이름" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#7a7a7a"
+                    android:text="온도" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#7a7a7a"
+                    android:text="습도" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#7a7a7a"
+                    android:text="조도" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#7a7a7a"
+                    android:text="농도" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLightGray"
+                />
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/layoutSr">
+
+            <ListView
+                android:layout_margin="10dp"
+                android:divider="#ffffff"
+                android:layout_below="@+id/header"
+                android:id="@+id/listCrops"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></ListView>
+            </android.support.v4.widget.SwipeRefreshLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
