@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".C_Main.SearchActivity"
+    android:fitsSystemWindows="true">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout_focus"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:layout_height="0px"/>
+    <!--백버튼-->
+    <RelativeLayout
+        android:id="@+id/search_act_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="13dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_24dp"
+            android:layout_margin="8dp"/>
+    </RelativeLayout>
+
+    <!--무엇을 찾으시나요?-->
+    <TextView
+        android:id="@+id/search_act_what_search_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_act_back_btn"
+        android:text="어떤 작물을 찾으시나요?"
+        android:textSize="22dp"
+        android:textColor="#5E5E5E"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="55dp"/>
+
+
+    <!--editText단-->
+    <RelativeLayout
+        android:id="@+id/search_act_search_edit_text_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_act_what_search_tv"
+        android:layout_marginTop="54dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        >
+
+        <EditText
+            android:id="@+id/search_crop"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="작물을 입력해주세요."
+            android:textColorHint="#C5C5C5"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:id="@+id/searchok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search_white_24dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:tint="#C5C5C5"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="3dp"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>
